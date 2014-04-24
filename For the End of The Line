@@ -1,0 +1,13 @@
+For the End of The Line.
+
+Change feature of 'exit' to pass the level.
+
+ 'exit' : {
+        'symbol' : String.fromCharCode(0x2395), // ⎕
+        'color': '#0ff',
+        'onCollision': function (player, game) {
+            //if (!game.map.finalLevel) {
+                game._moveToNextLevel();
+            //}
+        }
+    },
